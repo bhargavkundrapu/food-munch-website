@@ -11,4 +11,4 @@ COPY .food-munch.html
 EXPOSE 80
 
 # Command to start Nginx server, if not already included in the base image
-# CMD ["nginx", "-g", "daemon off;"]
+CMD ["nginx", "-g", "daemon off;"]
