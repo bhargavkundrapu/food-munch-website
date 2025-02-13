@@ -5,7 +5,7 @@ FROM nginx:alpine
 RUN rm /etc/nginx/conf.d/default.conf
 
 # Copy your website files to the Nginx web server directory
-COPY .food-munch.html
+COPY . /usr/share/nginx/html
 
 # Expose port 80 for HTTP traffic
 EXPOSE 80
